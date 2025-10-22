@@ -3,10 +3,26 @@ import { Container, Heading, Paragraph, Highlight } from "@/components";
 const Projects = () => {
   const projects = [
     {
+      title: "SmartNote-AI",
+      description: "An intelligent note-taking application powered by AI, built with Next.js and TypeScript. Features advanced note management, AI-powered insights, and modern UI components.",
+      tech: ["Next.js", "TypeScript", "React", "AI API Integration", "Supabase"],
+      status: "Completed",
+      features: [
+        "🤖 AI-powered note analysis and insights",
+        "📝 Advanced note management system",
+        "🔍 Smart search and categorization",
+        "📱 Responsive design for all devices",
+        "⚡ Fast and efficient note creation",
+        "🎨 Modern and intuitive interface"
+      ],
+      category: "Personal Project",
+      github: "https://github.com/htonioni/SmartNote-AI"
+    },
+    {
       title: "Personal Portfolio Website",
       description: "A modern, responsive portfolio built with Next.js 15 and TypeScript, featuring dark/light mode, 3D hover effects, and smooth animations.",
       tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "Framer Motion", "React 19"],
-      status: "In Development",
+      status: "Completed",
       features: [
         "🎨 Custom dark/light theme system",
         "📱 Fully responsive design",
@@ -312,7 +328,7 @@ const Projects = () => {
           
           <div className="mt-8 text-center">
             <Paragraph className="text-gray-700 dark:text-gray-300">
-              <strong>8 completed projects</strong> • <strong>Multiple frameworks</strong> • <strong>Growing expertise</strong> in modern web development
+              <strong>9 completed projects</strong> • <strong>Multiple frameworks</strong> • <strong>Growing expertise</strong> in modern web development
             </Paragraph>
           </div>
         </div>
