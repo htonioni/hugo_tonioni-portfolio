@@ -16,7 +16,7 @@ const Projects = () => {
         "🎨 Modern and intuitive interface"
       ],
       category: "Personal Project",
-      github: "https://github.com/htonioni/SmartNote-AI"
+      github: "https://github.com/htonioni/smart-note-ai"
     },
     {
       title: "Personal Portfolio Website",
