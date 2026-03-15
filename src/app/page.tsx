@@ -16,14 +16,14 @@ export default function Home() {
                 Hi, I'm <Highlight variant="primary">Hugo</Highlight>
               </Heading>
               <Heading as="h2" className="text-lg sm:text-xl md:text-2xl lg:text-xl xl:text-2xl desktop:text-3xl text-gray-600 dark:text-gray-300 font-normal">
-                Full-stack Developer
+                Full-Stack Software Engineer
               </Heading>
             </div>
 
             <Paragraph className="text-base sm:text-lg md:text-xl lg:text-lg xl:text-xl desktop:text-2xl leading-relaxed text-gray-600 dark:text-gray-300 max-w-2xl mx-auto lg:mx-0">
-              I'm a passionate full-stack developer and Information Technology student, 
-              building modern web applications with <Highlight>React, Next.js, TypeScript and Node</Highlight>. 
-              Currently, I'm focusing on deepening my backend skills and growing as a full-stack developer.
+              I'm a Full-Stack Software Engineer specializing in building scalable <Highlight>SaaS solutions and AI-powered applications</Highlight>.
+              Currently at Automate Army, working with <Highlight>TypeScript, Next.js, React, Node.js</Highlight>, and modern cloud technologies
+              to deliver custom software that drives business results.
             </Paragraph>
 
             {/* CTA Buttons */}
