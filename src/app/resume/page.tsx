@@ -6,17 +6,32 @@ const Resume = () => {
   // Real professional experience and education
   const experiences = [
     {
-      title: "IT Intern",
-      company: "Embraer",
-      period: "April 2023 - December 2024",
+      title: "Software Engineer",
+      company: "Automate Army",
+      period: "Nov 2025 - Present",
       description: [
-        "Developed and maintained enterprise Salesforce applications using Lightning Web Components (LWC) and Apex",
-        "Built gamified lead capture solution that successfully captured 200+ qualified leads for sales team",
-        "Created process automation flows and integrated external APIs to streamline business operations",
-        "Collaborated with cross-functional teams using Jira, Confluence, and Bitbucket for project management",
-        "Maintained enterprise web applications and provided technical support for business-critical systems"
+        "Architect and develop scalable full-stack web applications using TypeScript, Next.js, React, and Node.js",
+        "Deliver custom SaaS solutions tailored to business needs with focus on performance, security, and scalability",
+        "Design and maintain RESTful APIs and backend services integrated with Supabase (PostgreSQL), Google Cloud, and Vercel",
+        "Implement AI-driven workflows using LLM APIs, MCP integrations, and prompt engineering to optimize token usage and ensure reliable outputs",
+        "Lead feature development from concept to production deployment through full software development lifecycle",
+        "Collaborate directly with clients to translate business requirements into scalable technical solutions"
       ],
-      technologies: ["Salesforce", "Lightning Web Components", "Apex", "JavaScript", "HTML/CSS", "REST APIs", "Azure DevOps", "Jira"],
+      technologies: ["TypeScript", "Next.js", "React", "Node.js", "REST APIs", "PostgreSQL", "Supabase", "Google Cloud Platform", "Vercel", "AI Integration", "CI/CD"],
+      type: "work" as const
+    },
+    {
+      title: "Software Developer",
+      company: "Embraer",
+      period: "Jan 2024 - Nov 2025",
+      description: [
+        "Developed enterprise web applications and automation solutions using JavaScript, TypeScript, React, and Node.js",
+        "Built gamified lead capture system that successfully captured 200+ qualified leads for sales team",
+        "Created automated sales form system that generated standardized quotes, converted to PDF, and distributed to email lists",
+        "Designed and implemented RESTful APIs and automation workflows to streamline business operations",
+        "Collaborated with cross-functional teams using Jira, Confluence, and Bitbucket for project management"
+      ],
+      technologies: ["JavaScript", "TypeScript", "React", "Node.js", "NestJS", "REST APIs", "Salesforce", "Lightning Web Components", "Apex", "Azure DevOps", "Jira"],
       type: "work" as const
     },
     {
@@ -62,10 +77,12 @@ const Resume = () => {
 
   const skills = {
     frontend: ["React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Tailwind CSS"],
+    backend: ["Node.js", "Nest.js", "REST APIs", "PostgreSQL", "Supabase", "MongoDB"],
     salesforce: ["Lightning Web Components", "Apex", "Salesforce Platform", "Experience Cloud", "Process Builder"],
-    tools: ["Git", "Jira", "Confluence", "Bitbucket", "Azure DevOps", "VSCode", "Figma"],
-    backend: ["Node.js", "Nest.js", "REST APIs", "MongoDB", "PostgreSQL"],
-    languages: ["English (Fluent)", "Portuguese (Native)", "International Communication"]
+    cloud: ["Google Cloud Platform", "Vercel", "CI/CD", "Azure DevOps"],
+    ai: ["AI Integration", "LLM APIs", "Prompt Engineering", "MCP Integrations"],
+    tools: ["Git", "Jira", "Confluence", "Bitbucket", "VSCode", "Figma"],
+    languages: ["English (Fluent)", "Portuguese (Native)"]
   };
 
   return (
@@ -77,8 +94,9 @@ const Resume = () => {
             My Professional <Highlight variant="primary">Resume</Highlight>
           </Heading>
           <Paragraph className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-3xl mx-auto">
-            Full-Stack Developer & Salesforce Specialist with enterprise experience at Embraer. 
-            Passionate about creating modern digital solutions and automation that drive business results.
+            Full-Stack Software Engineer specializing in TypeScript-based web applications, building scalable SaaS solutions
+            with modern cloud architecture and AI integrations. Currently at Automate Army, delivering custom full-stack systems
+            using Next.js, React, and Node.js with a focus on practical AI integration and operational efficiency.
           </Paragraph>
           
           {/* Download Button */}
@@ -134,7 +152,7 @@ const Resume = () => {
             Technical <Highlight variant="secondary">Skills</Highlight>
           </Heading>
           
-          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
               <h3 className="text-xl font-bold mb-4 text-blue-600 dark:text-blue-400">Frontend</h3>
               <div className="flex flex-wrap gap-2">
@@ -145,29 +163,7 @@ const Resume = () => {
                 ))}
               </div>
             </div>
-            
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
-              <h3 className="text-xl font-bold mb-4 text-emerald-600 dark:text-emerald-400">Salesforce</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.salesforce.map((skill, index) => (
-                  <span key={index} className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300 rounded-lg text-sm font-medium">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            </div>
-            
-            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
-              <h3 className="text-xl font-bold mb-4 text-green-600 dark:text-green-400">Tools</h3>
-              <div className="flex flex-wrap gap-2">
-                {skills.tools.map((tool, index) => (
-                  <span key={index} className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-lg text-sm font-medium">
-                    {tool}
-                  </span>
-                ))}
-              </div>
-            </div>
-            
+
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
               <h3 className="text-xl font-bold mb-4 text-purple-600 dark:text-purple-400">Backend</h3>
               <div className="flex flex-wrap gap-2">
@@ -178,7 +174,51 @@ const Resume = () => {
                 ))}
               </div>
             </div>
-            
+
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold mb-4 text-emerald-600 dark:text-emerald-400">Salesforce</h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.salesforce.map((skill, index) => (
+                  <span key={index} className="px-3 py-1 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-800 dark:text-emerald-300 rounded-lg text-sm font-medium">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold mb-4 text-cyan-600 dark:text-cyan-400">Cloud & DevOps</h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.cloud.map((skill, index) => (
+                  <span key={index} className="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-800 dark:text-cyan-300 rounded-lg text-sm font-medium">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold mb-4 text-pink-600 dark:text-pink-400">AI & Automation</h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.ai.map((skill, index) => (
+                  <span key={index} className="px-3 py-1 bg-pink-100 dark:bg-pink-900/30 text-pink-800 dark:text-pink-300 rounded-lg text-sm font-medium">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
+              <h3 className="text-xl font-bold mb-4 text-green-600 dark:text-green-400">Tools</h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.tools.map((tool, index) => (
+                  <span key={index} className="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 rounded-lg text-sm font-medium">
+                    {tool}
+                  </span>
+                ))}
+              </div>
+            </div>
+
             <div className="bg-white dark:bg-gray-800 rounded-xl p-6 shadow-lg border border-gray-200 dark:border-gray-700">
               <h3 className="text-xl font-bold mb-4 text-orange-600 dark:text-orange-400">Languages</h3>
               <div className="flex flex-wrap gap-2">

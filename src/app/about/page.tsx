@@ -11,25 +11,28 @@ const About = () => {
         </Heading>
         
         <Heading as="h2" className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-          Full-Stack Developer & Software Engineering Student
+          Full-Stack Software Engineer
         </Heading>
 
         <div className="space-y-6 text-lg leading-relaxed">
           <Paragraph>
-            I'm a <Highlight variant="secondary">Full-Stack Developer</Highlight> with 2+ years of comprehensive experience 
-            building end-to-end web applications and enterprise solutions. Currently working as an <Highlight>IT Intern at Embraer</Highlight> in São José dos Campos, My expertise spans from modern web applications to enterprise Salesforce solutions that drive business automation and efficiency.
+            I'm a <Highlight variant="secondary">Full-Stack Software Engineer</Highlight> specializing in
+            TypeScript-based web applications and scalable SaaS solutions. Currently working as
+            a <Highlight>Software Engineer at Automate Army</Highlight>, building custom full-stack systems
+            with Next.js, React, Node.js, and modern cloud architecture with AI integrations.
           </Paragraph>
 
           <Paragraph>
-            At Embraer, I've delivered complete automation solutions that streamline business processes and capture 
-            hundreds of leads through integrated web applications.
-            At Embraer, I focus on automating processes and creating web solutions using JavaScript, TypeScript, Node.js, Nest.js, and Salesforce technologies like Lightning Web Components (LWC) and Apex. I've successfully developed solutions that <Highlight variant="accent">capture hundreds of leads</Highlight> and streamline business operations.
+            My expertise spans from modern web applications to enterprise Salesforce solutions. At Automate Army,
+            I architect scalable SaaS applications using cutting-edge technologies like Next.js, TypeScript, Supabase
+            (PostgreSQL), Google Cloud Platform, and Vercel. I implement <Highlight variant="accent">AI-driven workflows</Highlight> using
+            LLM APIs and prompt engineering to create reliable production-ready automation.
           </Paragraph>
 
           <Paragraph>
-            My technical foundation includes <Highlight>front-end development</Highlight> with React, TypeScript, and modern CSS frameworks, 
-            combined with <Highlight>back-end expertise</Highlight> in Node.js and Nest.js. On the Salesforce side, I create and maintain 
-            objects, automation flows, dashboards, reports, and custom applications using Apex and LWC.
+            Previously at <Highlight>Embraer</Highlight>, I delivered enterprise automation solutions and web applications that streamlined business
+            processes and captured hundreds of leads. I developed full-stack features using <Highlight variant="accent">JavaScript, TypeScript, React, and Node.js</Highlight>,
+            built RESTful APIs, created automation workflows, and worked extensively with databases and enterprise platforms to solve complex business challenges.
           </Paragraph>
 
           <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg border-l-4 border-blue-500">
@@ -87,11 +90,25 @@ const About = () => {
               <h4 className="font-semibold text-blue-600 dark:text-blue-400 mb-3 text-lg">Backend & Databases</h4>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                 {[
-                  "Node.js", "Nest.js", "Python", "MySQL", 
-                  "REST APIs", "PostgreSQL", "Database Design", "Server Architecture"
+                  "Node.js", "Nest.js", "Python", "PostgreSQL",
+                  "REST APIs", "Supabase", "Database Design", "Server Architecture"
                 ].map((tech) => (
                   <div key={tech} className="bg-blue-50 dark:bg-blue-900/20 p-3 rounded-lg text-center border border-blue-200 dark:border-blue-800">
                     <span className="font-medium text-blue-800 dark:text-blue-200">{tech}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-cyan-600 dark:text-cyan-400 mb-3 text-lg">Cloud & AI</h4>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                {[
+                  "Google Cloud Platform", "Vercel", "CI/CD", "AI Integration",
+                  "LLM APIs", "Prompt Engineering", "MCP Integrations", "Automation"
+                ].map((tech) => (
+                  <div key={tech} className="bg-cyan-50 dark:bg-cyan-900/20 p-3 rounded-lg text-center border border-cyan-200 dark:border-cyan-800">
+                    <span className="font-medium text-cyan-800 dark:text-cyan-200">{tech}</span>
                   </div>
                 ))}
               </div>
@@ -146,18 +163,18 @@ const About = () => {
             Professional Highlights
           </Heading>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg border border-blue-200 dark:border-blue-800">
-              <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-3">🏢 Embraer (2024 - Present)</h4>
-              <Paragraph className="text-blue-700 dark:text-blue-300">
-                IT Intern focusing on process automation and web solutions. Developed gamified lead capture tools, 
-                Salesforce automation flows, and enterprise applications.
+            <div className="bg-purple-50 dark:bg-purple-900/20 p-6 rounded-lg border border-purple-200 dark:border-purple-800">
+              <h4 className="font-semibold text-purple-800 dark:text-purple-200 mb-3">🚀 Automate Army (Nov 2025 - Present)</h4>
+              <Paragraph className="text-purple-700 dark:text-purple-300">
+                Software Engineer building scalable SaaS solutions with Next.js, React, Node.js, and AI integrations.
+                Focused on delivering custom full-stack systems with modern cloud architecture (GCP, Vercel, Supabase).
               </Paragraph>
             </div>
-            <div className="bg-green-50 dark:bg-green-900/20 p-6 rounded-lg border border-green-200 dark:border-green-800">
-              <h4 className="font-semibold text-green-800 dark:text-green-200 mb-3">✈️ Dubai National Air Travel (2020-2021)</h4>
-              <Paragraph className="text-green-700 dark:text-green-300">
-                Check-in Agent Assistance for international passengers, developing communication skills 
-                and working under pressure in dynamic environments.
+            <div className="bg-blue-50 dark:bg-blue-900/20 p-6 rounded-lg border border-blue-200 dark:border-blue-800">
+              <h4 className="font-semibold text-blue-800 dark:text-blue-200 mb-3">🏢 Embraer (Jan 2024 - Nov 2025)</h4>
+              <Paragraph className="text-blue-700 dark:text-blue-300">
+                Software Developer building enterprise web applications and automation solutions. Developed full-stack features with
+                JavaScript, TypeScript, React, and Node.js. Created automated workflows and APIs that captured 200+ leads.
               </Paragraph>
             </div>
           </div>

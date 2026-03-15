@@ -52,7 +52,7 @@ const Projects = () => {
       title: "Process Automation Solutions - Embraer",
       description: "Enterprise automation solutions using JavaScript, TypeScript, Node.js, and Salesforce to streamline business processes and improve operational efficiency.",
       tech: ["JavaScript", "TypeScript", "Node.js", "Nest.js", "Salesforce", "Apex", "LWC"],
-      status: "Ongoing",
+      status: "Completed",
       features: [
         "🔄 Automated business process workflows",
         "📋 Custom Salesforce objects and fields",
@@ -215,8 +215,8 @@ const Projects = () => {
         </Heading>
         
         <Paragraph className="text-xl text-gray-600 dark:text-gray-300 mb-12 max-w-3xl">
-          From enterprise solutions at Embraer to personal learning projects, here's a showcase of my development journey 
-          spanning Salesforce, React, TypeScript, and full-stack applications.
+          From custom SaaS solutions at Automate Army to enterprise web applications at Embraer, here's a showcase of my development journey
+          spanning full-stack development, AI integrations, modern JavaScript frameworks, and cloud architecture.
         </Paragraph>
 
         {/* Projects Grid */}
@@ -298,37 +298,37 @@ const Projects = () => {
           </Heading>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
-              <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-3">
-                💼
+              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-3">
+                🚀
               </div>
-              <h4 className="font-semibold mb-2">Enterprise Solutions</h4>
+              <h4 className="font-semibold mb-2">Current Role</h4>
               <p className="text-sm text-gray-600 dark:text-gray-300">
-                2+ years developing Salesforce applications, automation flows, and enterprise web solutions at Embraer
+                Software Engineer at Automate Army, building scalable SaaS solutions with Next.js, React, and AI integrations
               </p>
             </div>
             <div className="text-center">
-              <div className="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-3">
-                ⚙️
+              <div className="w-12 h-12 bg-emerald-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-3">
+                💼
               </div>
-              <h4 className="font-semibold mb-2">Full-Stack Development</h4>
+              <h4 className="font-semibold mb-2">Enterprise Experience</h4>
               <p className="text-sm text-gray-600 dark:text-gray-300">
-                Proficient in JavaScript, React, TypeScript, Node.js, Nest.js, and Salesforce platform technologies
+                2 years building enterprise web applications, automation systems, and full-stack solutions at Embraer
               </p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center text-white font-bold text-xl mx-auto mb-3">
-                🌐
+                ⚙️
               </div>
-              <h4 className="font-semibold mb-2">International Experience</h4>
+              <h4 className="font-semibold mb-2">Full-Stack Expertise</h4>
               <p className="text-sm text-gray-600 dark:text-gray-300">
-                Fluent in English with international experience in the US, bringing global perspective to development
+                Proficient in TypeScript, Next.js, React, Node.js, RESTful APIs, AI integrations, and cloud deployment (GCP, Vercel)
               </p>
             </div>
           </div>
-          
+
           <div className="mt-8 text-center">
             <Paragraph className="text-gray-700 dark:text-gray-300">
-              <strong>9 completed projects</strong> • <strong>Multiple frameworks</strong> • <strong>Growing expertise</strong> in modern web development
+              <strong>11 completed projects</strong> • <strong>Multiple frameworks</strong> • <strong>Enterprise & SaaS experience</strong> in modern web development
             </Paragraph>
           </div>
         </div>
